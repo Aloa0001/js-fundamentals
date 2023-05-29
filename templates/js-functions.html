@@ -1,0 +1,99 @@
+<h3 id="jsFunctions">JavaScript Functions</h3>
+<ul>
+    <li>
+        in JS, functions are objects - you can treat a function like any other value <br>
+    </li>
+    <li>
+        functions are Object type, and they are stored in the Heap Memory <br>
+    </li>
+    <li>
+        <b>Default Parameters</b>
+        <ul>
+            a default value is assigned for a function's parameter(s)
+            <pre>
+    <code>
+        function addition(a, b = 5){ 
+            return a + b; 
+        }
+
+        addition(2, 3); // => 5
+        addition(2); // => 7
+    </code>
+</pre>
+        </ul>
+    </li>
+    <li>
+        <b>First class & higher order functions</b>
+        <ul>
+            <li>
+                <b>First class function</b>
+                <ul>
+                    <li>
+                        a function is a value in JS and can be treated like any other value
+                        <ul>
+                            <li>
+                                you can assign a function to a variable, like any other value
+                                <br>when assigning a function to a variable, parenthesis are not used
+                                <br>
+                                <img src="../resources/media/png/assign-function.png" alt="">
+                            </li>
+                            <li>
+                                you can pass a function as an argument to another function
+                                <br>
+                                <img src="../resources/media/png/first-class-function1.png" alt="">
+                            </li>
+                            <li>
+                                you can RETURN a function from another function
+                                <br>
+                                <img src="../resources/media/png/first-class-function2.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <b>Higher order function</b>
+                <ul>
+                    <li>
+                        higher order functions are functions that operates on other functions, either taking them as
+                        arguments, invoking, or by returning them
+                        <ul>
+                            a higher function is a function that
+                            <li>
+                                receives another function as argument
+                            </li>
+                            <li>
+                                returns another function as output
+                            </li>
+                            <li>
+                                does both of the previous two points
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        ex: getResultArray() is a higher order function than calcAge() function - it takes it as an
+                        argument; <br>same for the anonymous function returned by the interviewQuestions()
+                    </li>
+                    <li>
+                        higher order functions are possible due to the existence of the first-class function concept,
+                        supported in JS, that allows higher order functions
+                    </li>
+                    <li>
+                        functions such as filter(), map(), forEach(), ... are all higher-order functions, taking as
+                        an argument another callback function
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <br>
+    <li>
+        <b>Passing functions as arguments</b>
+        <ul>
+            <li>
+
+            </li>
+        </ul>
+    </li>
+</ul>

@@ -1,0 +1,107 @@
+<h3 id="jsVariables">JavaScript Variables</h3>
+<h4>Date types</h4>
+<p>In JS, a variable doesn't have a data type, only its <b>value</b> has</p>
+<p>JS uses <b>Dynamically Typing</b> - the data type is automatically assigned to the value of a variable based on the
+    value
+    that it is stored</p>
+<p><b>Type Coercion</b> - JS converts one datatype to another - operators and functions automatically convert the values
+    given to them to appropriate types
+<pre>
+    <code>
+        let x = '10';
+        console.log(typeof x); // -> string
+
+        let y = 2;
+        console.log(typeof y); // -> number
+
+        console.log(x - y); // -> <b>8</b> - type coercion - JS understands that var x has to be converted to number due to operator '-'
+        console.log(typeof (x - y)); // -> number
+    </code>
+</pre>
+</p>
+<ul>
+    <li>
+        every value in JS has a data type
+    </li>
+    <li>
+        primitive type - 7 types
+        <ul>
+            <li>
+                String - sequence of chars
+            </li>
+            <li>
+                Number - integers, floating point numbers, ...
+                <ul>
+                    <li>
+                        number type contains always floating point numbers, even when storing integers
+                    </li>
+                    <li>
+                        special number type values: <i>infinity</i>, <i>- infinity</i> (ex: when diving to zero), and
+                        <i>NaN</i> (ex: when a number is expected, but the value provided is not a number - dividing a
+                        number to a string)
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Boolean - true or false
+            </li>
+            <li>
+                Undefined - a type of a var that it is not initialized yet - the value it is not assigned yet
+            </li>
+            <li>
+                Null - non existing, unknown, or empty variable
+            </li>
+            <li>
+                Bigint - large numbers that can not be stored in <i>number</i> type
+            </li>
+            <li>
+                Symbol - used to create unique identifiers for objects
+            </li>
+        </ul>
+    </li>
+    <li>
+        object type
+    </li>
+    <br>
+    <li>
+        Declaring js-variables
+        <ul>
+            <li>
+                let
+                <ul>
+                    <li>
+                        allows an empty declaration of the Variable
+                    </li>
+                    <li>
+                        allows the future change of the value/type that the variable is storing
+                    </li>
+                    <li>
+                        allows variable re-initialization or variable mutation
+                    </li>
+                </ul>
+            </li>
+            <li>
+                const
+                <ul>
+                    <li>
+                        can not change the value assign at initialization
+                    </li>
+                    <li>
+                        can not declare an empty variable as cont - must initialize the value
+                    </li>
+                </ul>
+            </li>
+            <li>
+                var
+                <ul>
+                    <li>
+                        similar to let keyword
+                    </li>
+                    <li>
+                        can declare empty variables, initialize later, change the value/type of the stored value
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
