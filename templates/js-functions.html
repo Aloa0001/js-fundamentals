@@ -7,6 +7,22 @@
         functions are Object type, and they are stored in the Heap Memory <br>
     </li>
     <li>
+        a function is a value in JS, so it can be assigned to a variable as a value - it is called <b>function
+            expression</b>
+        <pre>
+    <code>
+        let greet = function(name) {
+            console.log('Hello, ' + name + '!');
+        }
+
+        greet('John');
+    </code>
+</pre>
+        Obs: <small> a function expression/statement can not be invoked before the function expression line, while a
+            function declaration can</small>
+    </li>
+    <br>
+    <li>
         <b>Default Parameters</b>
         <ul>
             a default value is assigned for a function's parameter(s)
